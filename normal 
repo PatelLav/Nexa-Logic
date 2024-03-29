@@ -1,0 +1,8 @@
+<ul class="nav-menu">
+  {% for nav in site.data.nav %}
+    <li {% if page.url == nav.url %}class="active" aria-current="page"{% endif %}>
+      <a href="index.html">Home</a></li>
+        <li id="about-link"><a href="about-us.html">About Us</a></li>
+        <li id="services-link" class="menu-item-has-children"><a href="javascript:void(0)">Services</a>    </li>
+  {% endfor %}
+</ul>
